@@ -3,7 +3,12 @@ new_page_extension: md
 auto_deploy: false
 admin_path: static/admin
 webhook_url: 
-sections: 
+sections:
+- type: directory
+  path: content
+  label: Blog
+  create: documents
+  match: "**/*"
 upload_dir: gatsby
 public_path: https://res.cloudinary.com/hungryram19/image/upload
 front_matter_path: ''
